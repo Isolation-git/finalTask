@@ -1,0 +1,55 @@
+@import "./normalize.css";
+
+:root {
+    --color-text: #999999;
+    --color-high-text: #ff5777;
+    --color-tint: #ff8198;
+    --color-background: #fff;
+    --font-size: 14px;
+    --line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Hevletica, "PingFang SC", "Hiragino Scans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    /* user-select: none; */
+    /*禁止用户鼠标在页面上选中文字*/
+    -webkit-tap-highlight-color: transparent;
+    /* webkit是苹果浏览器引擎，tap点击，highlight背景高亮，color颜色，颜色用于数值调节*/
+    background: var(--color-background);
+    color: var(--color-text);
+}
+
+a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+
+
+@font-face {
+    font-family: "iconfont";
+    /* Project id 2718879 */
+    src: url('./font_2718879_pd0042hm3m8/iconfont.woff2?t=1628582521773') format('woff2'),
+        url('./font_2718879_pd0042hm3m8/iconfont.woff?t=1628582521773') format('woff'),
+        url('./font_2718879_pd0042hm3m8/iconfont.ttf?t=1628582521773') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+li {
+    list-style: none;
+}
